@@ -1,0 +1,51 @@
+# Gradle files
+.gradle/
+build/
+*.apk
+*.ap_
+*.dex
+*.class
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Generated files
+bin/
+gen/
+.DS_Store
+
+# Android Studio specific files/directories
+.idea/
+*.iws
+*.iml
+*.ipr
+.navigation/
+.tooling/
+
+# Signing files
+.signing/
+*.jks
+*.keystore
+
+# User-specific stuff:
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+
+# OS-specific files
+Thumbs.db
+.DS_Store
+
+# Backup files
+*~
+*.bak
+*.tmp
+
+# Database files
+*.db
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
