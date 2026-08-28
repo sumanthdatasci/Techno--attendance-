@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/default_padding"
+    android:background="@color/white"
+    android:layout_margin="@dimen/small_padding">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvMemberId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="001"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_marginBottom="@dimen/small_padding" />
+
+        <TextView
+            android:id="@+id/tvMemberName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Member Name"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_marginBottom="@dimen/small_padding" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/default_padding">
+
+        <TextView
+            android:id="@+id/tvPresent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Present: 0"
+            android:textColor="@color/present_color"
+            android:layout_marginBottom="@dimen/small_padding" />
+
+        <TextView
+            android:id="@+id/tvAbsent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Absent: 0"
+            android:textColor="@color/absent_color"
+            android:layout_marginBottom="@dimen/small_padding" />
+
+        <TextView
+            android:id="@+id/tvLeave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leave: 0" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAttendancePercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:layout_marginStart="@dimen/default_padding" />
+</LinearLayout>
