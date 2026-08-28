@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/default_padding"
+    android:background="@color/light_gray">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_padding"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/default_padding">
+
+            <TextView
+                android:id="@+id/tvMemberId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ID: 001"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:layout_marginBottom="@dimen/small_padding" />
+
+            <TextView
+                android:id="@+id/tvFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name: John Doe"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_marginBottom="@dimen/small_padding" />
+
+            <TextView
+                android:id="@+id/tvMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile: 9876543210"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_marginBottom="@dimen/small_padding" />
+
+            <TextView
+                android:id="@+id/tvJoiningDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Joined: 01-01-2024"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_marginBottom="@dimen/small_padding" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status: Active"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/present_color"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_padding"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/default_padding">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Month Statistics"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/small_padding" />
+
+            <TextView
+                android:id="@+id/tvTotalDays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Days: 0"
+                android:layout_marginBottom="@dimen/small_padding" />
+
+            <TextView
+                android:id="@+id/tvPresentDays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Present: 0"
+                android:textColor="@color/present_color"
+                android:layout_marginBottom="@dimen/small_padding" />
+
+            <TextView
+                android:id="@+id/tvAbsentDays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Absent: 0"
+                android:textColor="@color/absent_color" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/edit"
+            android:layout_marginEnd="@dimen/small_padding" />
+
+        <Button
+            android:id="@+id/btnDeactivate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/deactivate"
+            android:layout_marginHorizontal="@dimen/small_padding" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/delete"
+            android:layout_marginStart="@dimen/small_padding" />
+    </LinearLayout>
+</LinearLayout>
